@@ -1,0 +1,5 @@
+.env
+sync.session
+/utils/__pycache__
+.DS_Store
+.idea
