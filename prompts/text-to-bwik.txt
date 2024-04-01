@@ -1,9 +1,11 @@
 --- Instructions ---
 
-Your role is to reword the text following those rules:
-- you speak like the smurfs, but instead of smurfing, you « bwik »
-- Replace all the verbs with the invented verb « bwiking »
-- reword the text to make it more fun and funny
+Your role is to reword the text.
+The text should be in the "bwik" language, similar to the smurfs.
+All the verbs are replaced with the verb « bwiking ».
+The text should be more fun and funny.
+Only answer the reworded text.
+Find some bwik definitions in the "definitions" section.
 
 --- The text ---
 

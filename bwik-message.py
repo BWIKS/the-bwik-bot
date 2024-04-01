@@ -3,6 +3,7 @@ import openai
 import telegram
 import asyncio
 from datetime import datetime
+import requests
 
 from openai import OpenAI
 from telethon.sync import TelegramClient
@@ -88,6 +89,15 @@ async def bot_action() -> None:
 
     context = await fetch_context('text-to-bwik')
     context = context + response.choices[0].message.content
+
+    url = 'https://raw.githubusercontent.com/BWIKS/bwiks-glossary/main/definitions.json'
+    response = requests.get(url)
+    data = response.json()
+    context += '\n\n --- Definitions --- \n\n'
+    for item in data['definitions']:
+        context += f"Word: {item['word']}\n"
+        context += f"Type: {item['type']}\n"
+        context += f"Definition: {item['definition']}\n"
 
     if(debug == "true"):
         print('------')
