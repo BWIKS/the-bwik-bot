@@ -45,11 +45,14 @@ async def get_messages(limit) -> list[str]:
 
 async def bot_action() -> None:
     print('Reading messages...')
-    messages = await get_messages(1)
+    messages = await get_messages(10)
+    messages.reverse()
 
-    if bot_name in messages[0].split(':')[0]: return False
+    lastMessage = messages[-1]
+    print(lastMessage)
+    if bot_name in lastMessage.split(':')[0]: return False
 
-    context = (await fetch_context('message-type')) + '\n' + messages[0]
+    context = (await fetch_context('message-type')) + '\n' + lastMessage
     
     if(debug == "true"):
         print('------')
@@ -71,6 +74,9 @@ async def bot_action() -> None:
 
     context = await fetch_context('context-' + response.choices[0].message.content.lower())
 
+    context += '\n\n --- Messages history --- \n\n' + '\n'.join(messages[:-1])
+    context = context.replace('{BOT_NAME}', bot_name)
+
     if(debug == "true"):
         print('------')
         print('---2nd-prompt---')
@@ -83,7 +89,7 @@ async def bot_action() -> None:
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": context},
-            {"role": "user", "content": messages[0]}
+            {"role": "user", "content": lastMessage}
         ]
     )
 

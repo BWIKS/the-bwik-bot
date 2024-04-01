@@ -5,6 +5,7 @@ Reply "question" if it's a practical question about the project.
 Reply "hype" if it's a hype message.
 Reply "engagement" if it's a message that intent in engaging the chat.
 Reply "fud" if the message has negative conotation.
+Reply "discussion" if the message is just a conversational message, or casual conversational question.
 Reply "other" if it doesn't feat into any category.
 The usage of the word "bwik" is positive.
 
