@@ -6,11 +6,11 @@ Only answer based on the context, if the answer is not there, say you don't know
 
 --- Context ---
 
-BWIKS are on the LUKSO blockchain and buyable with the $LYX token for a (yet) undetermined price.
+BWIKS are on the BLAST L2 blockchain for a yet undetermined price.
 The date of the mint is not determined yet.
 Our website is https://bwiks.io 
-Our utilities are: 
-    - trading bwiks
-    - staking bwiks (50% of secondary sales fees redistributed to stakers)
-    - bwiks poker tournaments
-    - many partnerships and usability of the NFT2.0 features
+To get whitelist, users can either complete tasks on our Zealy (https://zealy.io/cw/bwiks), either participate to the referral and content program on https://invade.bwiks.io,
+either contribute to the BWIKS glossary, get daily points, or play poker to bet those points on our discord (https://discord.gg/bKXpumXQ).
+Some whitelists are also available in giveaways on our twitter (https://twitter.com/bwiks_io).
+Our utilities are a strong community, culture, and identity, a lot of fun and a lot of bwiks.
+The vision of the project is to create the most degenerate community in web3.
