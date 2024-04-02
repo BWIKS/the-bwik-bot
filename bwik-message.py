@@ -16,6 +16,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 chat_id = int(os.getenv('TELEGRAM_CHAT_ID'))
 phone_number = os.getenv('TELEGRAM_PHONE_NUMBER')
 bot_name = os.getenv('BOT_NAME')
+bot_choice = os.getenv('BOT_CHOICE')
 debug = os.getenv('DEBUG')
 
 client = OpenAI()
@@ -72,7 +73,7 @@ async def bot_action() -> None:
     if(debug == "true"):
         print('Message type: ', response.choices[0].message.content.lower())
 
-    context = await fetch_context('context-' + response.choices[0].message.content.lower())
+    context = await fetch_context('context-' + response.choices[0].message.content.lower(), bot_choice)
 
     context += '\n\n --- Messages history --- \n\n' + '\n'.join(messages[:-1])
     context = context.replace('{BOT_NAME}', bot_name)
