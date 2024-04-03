@@ -33,7 +33,6 @@ async def get_messages(limit) -> list[str]:
         chat_entity = await client.get_entity(chat_id)
         messages = []
         async for message in client.iter_messages(chat_entity, limit=limit):
-            print(message)
             from_id = message.from_id.user_id if message.from_id else None
             if from_id:
                 if from_id not in usernames:
@@ -56,7 +55,6 @@ async def bot_action() -> None:
     messages.reverse()
 
     lastMessage = messages[-1]
-    print(lastMessage)
     if bot_name in lastMessage.split(':')[0]: return False
 
     context = (await fetch_context('message-type')) + '\n' + lastMessage

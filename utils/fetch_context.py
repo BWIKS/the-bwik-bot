@@ -11,7 +11,6 @@ local = os.getenv('LOCAL')
 prompts_url = "https://raw.githubusercontent.com/BWIKS/the-bwik-bot/main/prompts/"
 
 async def fetch_context(file_name: str, bot_number: Optional[str] = None) -> str:
-    print(bot_number)
     if bot_number:
         location = f"bot-{bot_number}/{file_name}.txt"
     else:
