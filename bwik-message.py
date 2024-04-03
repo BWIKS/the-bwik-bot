@@ -33,13 +33,19 @@ async def get_messages(limit) -> list[str]:
         chat_entity = await client.get_entity(chat_id)
         messages = []
         async for message in client.iter_messages(chat_entity, limit=limit):
+            print(message)
             from_id = message.from_id.user_id if message.from_id else None
-            if from_id and from_id not in usernames:
-                user = await client.get_entity(from_id)
-                if user.username: usernames[from_id] = user.username
-                else: usernames[from_id] = user.first_name
+            if from_id:
+                if from_id not in usernames:
+                    user = await client.get_entity(from_id)
+                    if user.username: 
+                        usernames[from_id] = user.username
+                    else: 
+                        usernames[from_id] = user.first_name
             
-            messages.append(usernames[from_id] + ' : ' + message.text)
+            # Ensure from_id exists in usernames and message.text is not None
+            if from_id in usernames and message.text:
+                messages.append(usernames[from_id] + ' : ' + message.text)
     finally:
         await client.disconnect()
     return messages
