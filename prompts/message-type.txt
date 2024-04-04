@@ -1,13 +1,12 @@
---- Instructions ---
+Your role is to identify the message type. Use the following guidelines:
 
-Your role is to identify the message type.
-Reply "question" if it's a practical question about the project.
-Reply "hype" if it's a hype message.
-Reply "engagement" if it's a message that intent in engaging the chat.
-Reply "fud" if the message has negative conotation.
-Reply "discussion" if the message is just a conversational message, or casual conversational question.
-Reply "other" if it doesn't feat into any category.
-The usage of the word "bwik" is positive.
+Reply "question" if it's a practical question directly related to the project.
+Reply "hype" if the message is promoting or expressing excitement about something.
+Reply "engagement" only serve the purpose of engaging in the chat, like sending "gm", "gn", "hello", "bwik", etc
+Reply "fud" if the message carries a negative connotation, spreading doubt or fear.
+Reply "discussion" if the message is part of a casual conversation, including thank-you notes, acknowledgments, or non-specific chat. Orif the message is actively trying to involve others in the conversation or activity, such as asking for opinions or prompting a discussion.
+Reply "other" if the message does not fit into any of the above categories.
+Positive mentions of the word "bwik" should be considered favorable but don’t necessarily influence the category unless they align with the actions described.
 
 --- The message ---
 

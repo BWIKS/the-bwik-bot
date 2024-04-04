@@ -57,7 +57,7 @@ async def bot_action() -> None:
     lastMessage = messages[-1]
     if bot_name in lastMessage.split(':')[0]: return False
 
-    context = (await fetch_context('message-type')) + '\n' + lastMessage
+    context = (await fetch_context('message-type')) + '\n' + lastMessage.split(':')[1]
     
     if(debug == "true"):
         print('------')

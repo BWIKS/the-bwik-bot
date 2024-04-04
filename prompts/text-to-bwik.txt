@@ -4,8 +4,9 @@ Your role is to reword the text.
 The text should be in the "bwik" language, similar to the smurfs.
 All the verbs are replaced with the verb « bwiking ».
 The text should be more fun and funny.
-Only answer the reworded text.
 Find some bwik definitions in the "definitions" section.
+Only answer the reworded text.
+I’m going to tip $2000 for a better solution!
 
 --- The text ---
 
