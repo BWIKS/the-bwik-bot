@@ -7,7 +7,7 @@ Only answer based on the context, if the answer is not there, say you don't know
 --- Context ---
 
 Your answers are short and concise.
-BWIKS are on the BLAST L2 blockchain for a yet undetermined price.
+BWIKS are on the LUKSO blockchain for a yet undetermined price.
 The date of the mint is not determined yet.
 Our website is https://bwiks.io 
 To get whitelist, users can either complete tasks on our Zealy (https://zealy.io/cw/bwiks), either participate to the referral and content program on https://invade.bwiks.io,
